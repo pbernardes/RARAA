@@ -1,0 +1,64 @@
+/*!
+ * Start Bootstrap - Busines Frontpage (https://startbootstrap.com/template-overviews/business-frontpage)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+//*{ outline:1px solid violet; }
+
+ .navbar {
+  min-height: 150px;
+}
+
+.navbar-brand {
+  padding: 0 0px;
+  height: 150px;
+  line-height: 150px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 58px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 61.5px;
+    padding-bottom: 61.5px;
+    line-height: 27px;
+  }
+}
+
+.bg-light {
+  background-color: white !important;
+}
+
+a.bg-light:hover, a.bg-light:focus,
+button.bg-light:hover,
+button.bg-light:focus {
+  background-color: #dae0e5 !important;
+}
+
+body {
+  padding-top: 150px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 150px;
+  }
+}
+
+.raraa-header {
+  height: 35vh;
+  min-height: 300px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.card {
+  height: 100%;
+}

@@ -20,20 +20,33 @@
     </head>
 
     <body>
-        
     <?php
-        if( isset( $_GET['page'] ) ){
+    if( isset( $_GET['page'] ) ){
 
-            $pageid = $_GET['page'];
+        $pageid = $_GET['page'];
 
-        }else{
+    }else{
 
-            $pageid = 1;
+        $pageid = 1;
 
-            }
-    ?>
+        }
+
+    echo $pageid;
+
+    if( isset( $_GET['lg'] )){
+
+        $langid = $_GET['lg'];
+
+    }else{
+
+        $langid = 1;
+
+    }
+?>    
     
     <?php
+    
+    include 'php_source/raraa_auxFuncPHP.php';
     
     include 'php_source/raraa_navbar.php';
     include 'php_source/raraa_header.php';
@@ -42,6 +55,14 @@
         case 2:
             include 'php_source/raraa_about.php';
             break;
+        case 3:
+            include 'php_source/raraa_members.php';
+            break;
+        case 4:
+            include 'php_source/raraa_news.php';
+            break;
+        case 5:
+            
         default:                        
             include 'php_source/raraa_home.php';
             break;

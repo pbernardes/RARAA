@@ -21,6 +21,18 @@ $image_array_size = sizeof($image_array);
                 <div class="row">
                     <div class="col-lg-12">
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                            <?php
+                                for( $i = 0; $i < ( $image_array_size - 2 ); $i++ ){
+                            ?>
+                                <li data-target="#carouselExampleSlidesOnly" data-slide-to="<?php echo $i ?>" <?php if ($i==0) {echo 'class="active"';}?> ></li>
+                            <?php
+                            }
+                            ?>
+                            </ul>
+                            
+                            <!-- Images -->
                             <div class="carousel-inner">
                                 <?php
                                 // build the carousel

@@ -6,9 +6,6 @@
  * @author: Paulo Bernardes
  */
 
-//$language = chooseLang($langid);
-$menu = chooseMenu($langid);
-
 ?>
     <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -17,7 +14,7 @@ $menu = chooseMenu($langid);
                     <img class="d-block w-100" src="Img/Logo/RARAA_Logo_149.png" alt="Logo">
                 </a>
                 <a class="navbar-brand" style="font-size: 95%" href="?page=1&lg=<?php echo $langid;?>">
-                    <?php echo chooseHeaderTitle($langid); ?>
+                    <?php echo chooseHeaderTitle( $langid ); ?>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

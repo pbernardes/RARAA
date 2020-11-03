@@ -54,7 +54,7 @@ function chooseMenu( $lang_id ){
     switch ( $lang_id ){
         case 2:
             $session_menu[0] = 'Início';
-            $session_menu[1] = 'Acerca';
+            $session_menu[1] = 'Sobre';
             $session_menu[2] = 'Membros';
             $session_menu[3] = 'Grupos de Trabalho';
             $session_menu[4] = 'Novidades';
@@ -62,7 +62,7 @@ function chooseMenu( $lang_id ){
         default:
             $session_menu[0] = 'Home';
             $session_menu[1] = 'About';
-            $session_menu[2] = 'Member';
+            $session_menu[2] = 'Members';
             $session_menu[3] = 'Working Groups';
             $session_menu[4] = 'News';
             break;

@@ -11,7 +11,7 @@
 
             <div class="row">
                 <div class="col-sm-8">
-                    <h2 class="mt-4">Members</h2>
+                    <h2 class="mt-4"><?php echo $menu[2];?></h2>
                     
                      <div class="image-wrapper float-left pr-3">
                          <img src="https://placeimg.com/150/150/animals" alt="">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                     <div class="col-sm-4">
-                      <h2 class="mt-4">News</h2>
+                      <h2 class="mt-4"><?php echo $menu[4];?></h2>
 
 
                 </div>

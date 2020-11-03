@@ -6,34 +6,34 @@
  * @author: Paulo Bernardes
  */
 
+include 'raraa_homeAUxFuncPHP.php';
+
 ?>
         <!-- Page Content -->
         <div class="container">
 
             <div class="row">
                 <div class="col-sm-8">
-                <h2 class="mt-4">Working Progress</h2>
+                <h2 class="mt-4"><?php echo $home_wp_title;?></h2>
                 <div id="working_progress" class="carousel slide" data-ride="carousel" data-interval="false">
-                    <!-- The slideshow -->
+
+                    <!-- The Working Progress slideshow -->
+                    
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://placeimg.com/480/270/nature" alt="Los Angeles">
+                        <?php
+                        for ( $i = 0; $i < ( $home_wp_image_array_size -2 ); $i++ ){                                             
+                        ?>
+                        <div class="carousel-item <?php if ( $i == 0 ) echo 'active'; ?>">
+                            <a>
+                                <img class="d-block w-100" src="<?php echo $home_wp_image_source_directory_path.$home_wp_image_array[ $i + 2 ];?>" alt="<?php openText( $wg_image_title_directory_path.$wg_image_title_array[ $i + 2 ]);?>">
+                            </a> 
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Articles</h5>                                
+                                <h5><?php openText( $wg_image_title_directory_path.$wg_image_title_array[ $i + 2 ] );?></h5>                                
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="https://placeimg.com/480/270/tech/grayscale" alt="Chicago">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Good practice guide</h5>                                
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="https://placeimg.com/480/270/people/sepia" alt="New York">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Bibliography</h5>                                
-                            </div>
-                        </div>
+                        <?php
+                        }
+                        ?>
                     </div>
 
                     <!-- Left and right controls -->
@@ -44,11 +44,10 @@
                         <span class="carousel-control-next-icon"></span>
                     </a>
               </div>
-              
-              
+                            
             </div>
             <div class="col-sm-4">
-              <h2 class="mt-4">News</h2>
+              <h2 class="mt-4"><?php echo $menu[4];?></h2>
               
             </div>
           </div>

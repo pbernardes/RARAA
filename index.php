@@ -21,6 +21,7 @@
 
     <body>
     <?php
+    
     if( isset( $_GET['page'] ) ){
 
         $pageid = $_GET['page'];
@@ -31,8 +32,7 @@
 
         }
 
-    echo $pageid;
-
+    // set language    
     if( isset( $_GET['lg'] )){
 
         $langid = $_GET['lg'];
@@ -48,10 +48,13 @@
     
     include 'php_source/raraa_auxFuncPHP.php';
     
+    // sets the page menu
+    $menu = chooseMenu( $langid );
+    
     include 'php_source/raraa_navbar.php';
     include 'php_source/raraa_header.php';
     
-    switch ($pageid){
+    switch ( $pageid ){
         case 2:
             include 'php_source/raraa_about.php';
             break;

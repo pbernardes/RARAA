@@ -21,7 +21,7 @@
   padding: 9px 10px !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .navbar-nav > li > a {
     /* (150px - line-height of 27px) / 2 = 26.5px */
     padding-top: 61.5px;

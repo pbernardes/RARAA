@@ -11,13 +11,13 @@
  */
 
 // Working Progress image source path
-$home_wp_image_source_directory_path = "Img/Home/WorkingProgress/";
+$raraa_home_wp_image_source_directory_path = "Img/Home/WorkingProgress/";
 
 // Working Progress image array
-$home_wp_image_array = scandir( $home_wp_image_source_directory_path );
+$raraa_home_wp_image_array = scandir( $raraa_home_wp_image_source_directory_path );
 
 // Working Progress array size
-$home_wp_image_array_size = sizeof( $home_wp_image_array );
+$raraa_home_wp_image_array_size = sizeof( $raraa_home_wp_image_array );
 
 /* 
  * Retrieve Image Titles----------------
@@ -28,18 +28,18 @@ $home_wp_image_array_size = sizeof( $home_wp_image_array );
 
 switch ( $langid ){
     case 2:
-        $wg_image_title_directory_path = "Text/PT/Home/WorkingProgress/ImageTitle/";
+        $raraa_home_wp_image_title_directory_path = "Text/PT/Home/WorkingProgress/ImageTitle/";
         break;
     default:
-        $wg_image_title_directory_path = "Text/ENG/Home/WorkingProgress/ImageTitle/";
+        $raraa_home_wp_image_title_directory_path = "Text/ENG/Home/WorkingProgress/ImageTitle/";
         break;
 }
 
 // Working Progress image array
-$wg_image_title_array = scandir( $wg_image_title_directory_path );
+$raraa_wp_image_title_array = scandir( $raraa_home_wp_image_title_directory_path );
 
 // Working Progress array size
-$wg_image_title_array_size = sizeof( $wg_image_title_array );
+$raraa_wp_image_title_array_size = sizeof( $raraa_wp_image_title_array );
 
 
 /*

@@ -33,7 +33,7 @@
                             <a class="nav-link" href="?page=3&lg=<?php echo $langid;?>"><?php echo $menu[2];?></a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $menu[3];?></a>
+                            <a class="nav-link dropdown-toggle disabled" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php echo $menu[3];?></a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="?page=5?wg=1">
                                     WG 01
@@ -49,7 +49,7 @@
                             </div>
                         </li>
                         <li class="nav-item <?php if ( $pageid == 4 ) echo 'active'; ?>">
-                            <a class="nav-link" href="?page=4&lg=<?php echo $langid;?>"><?php echo $menu[4];?></a>
+                            <a class="nav-link disabled" href="?page=4&lg=<?php echo $langid;?>"><?php //echo $menu[4];?></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="?page=4"></a>

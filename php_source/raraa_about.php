@@ -34,7 +34,8 @@ include 'raraa_aboutAuxFuncPHP.php';
                 </div>
                     <div class="col-sm-4">
                       <h2 class="mt-4"><?php echo $menu[4];?></h2>
-
+                       <div class="d-block mw-100">
+                                                     
 
                 </div>
             </div>

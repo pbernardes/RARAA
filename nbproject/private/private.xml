@@ -5,15 +5,11 @@
         <group>
             <file>file:/C:/xampp/htdocs/RARAA/php_source/raraa_homeAuxFuncPHP.php</file>
             <file>file:/C:/xampp/htdocs/RARAA/php_source/raraa_navbar.php</file>
-            <file>file:/C:/xampp/htdocs/RARAA/Text/Common/Members/mem_name_3.txt</file>
-            <file>file:/C:/xampp/htdocs/RARAA/Text/Common/Members/mem_name_2.txt</file>
-            <file>file:/C:/xampp/htdocs/RARAA/Text/ENG/Members/mem_cv_EN_1.txt</file>
-            <file>file:/C:/xampp/htdocs/RARAA/Text/PT/Home/WorkingProgress/ImageTitle/2_wp_PT</file>
-            <file>file:/C:/xampp/htdocs/RARAA/Text/Common/Members/mem_name_1.txt</file>
-            <file>file:/C:/xampp/htdocs/RARAA/css/raraa-frontpage.css</file>
+            <file>file:/C:/xampp/htdocs/RARAA/php_source/raraa_about.php</file>
             <file>file:/C:/xampp/htdocs/RARAA/index.php</file>
             <file>file:/C:/xampp/htdocs/RARAA/php_source/raraa_members.php</file>
-            <file>file:/C:/xampp/htdocs/RARAA/Text/PT/Home/WorkingProgress/ImageTitle/3_wp_PT</file>
+            <file>file:/C:/xampp/htdocs/RARAA/php_source/raraa_home.php</file>
+            <file>file:/C:/xampp/htdocs/RARAA/php_source/raraa_membersAuxFuncPHP.php</file>
         </group>
     </open-files>
 </project-private>

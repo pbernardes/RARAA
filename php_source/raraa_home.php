@@ -6,7 +6,7 @@
  * @author: Paulo Bernardes
  */
 
-include 'raraa_homeAUxFuncPHP.php';
+include 'raraa_homeAuxFuncPHP.php';
 
 ?>
         <!-- Page Content -->
@@ -15,6 +15,15 @@ include 'raraa_homeAUxFuncPHP.php';
                 <div class="col-sm-8">
                     <h2 class="mt-4"><?php echo $home_wp_title;?></h2>
                     <div id="working_progress" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <ul class="carousel-indicators">
+                            <?php
+                            for( $i = 0; $i < ( $raraa_home_wp_image_array_size - 2 ); $i++ ){
+                            ?>
+                                <li data-target="#working_progress" data-slide-to="<?php echo $i ?>" <?php if ($i==0) {echo 'class="active"';}?> ></li>
+                            <?php
+                            }// end for()
+                            ?>
+                            </ul>
                         <!-- The Working Progress slideshow -->
                         <div class="carousel-inner">
                             <?php

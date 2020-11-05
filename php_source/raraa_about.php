@@ -26,18 +26,16 @@ include 'raraa_aboutAuxFuncPHP.php';
                 <div class="col-sm-8">
                     <h2 class="mt-4"><?php echo $menu[1];?></h2>
                     <div class="d-block mw-100">
-                        <?php
-                        //openText("Text/ENG/About/raraa_about_txt.txt");
+                        <?php                        
                         openText($raraa_about_text_path);
                         ?>                  
                     </div>
                 </div>
                     <div class="col-sm-4">
                       <h2 class="mt-4"><?php echo $menu[4];?></h2>
-                       <div class="d-block mw-100">
-                                                     
-
-                </div>
+                       <?php
+                      include 'raraa_news.php';
+                      ?>
             </div>
 
         </div>

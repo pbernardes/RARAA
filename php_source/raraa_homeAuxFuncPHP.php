@@ -11,7 +11,7 @@
  */
 
 // Working Progress image source path
-$raraa_home_wp_image_source_directory_path = "Img/Home/WorkingProgress/";
+$raraa_home_wp_image_source_directory_path = "Img/Home/WorkingProgress/Slideshow/";
 
 // Working Progress image array
 $raraa_home_wp_image_array = scandir( $raraa_home_wp_image_source_directory_path );
@@ -36,10 +36,10 @@ switch ( $langid ){
 }
 
 // Working Progress image array
-$raraa_wp_image_title_array = scandir( $raraa_home_wp_image_title_directory_path );
+$raraa_home_wp_image_title_array = scandir( $raraa_home_wp_image_title_directory_path );
 
 // Working Progress array size
-$raraa_wp_image_title_array_size = sizeof( $raraa_wp_image_title_array );
+$raraa_home_wp_image_title_array_size = sizeof( $raraa_home_wp_image_title_array );
 
 
 /*
@@ -52,5 +52,31 @@ switch ( $langid ){
         break;
     default :
         $home_wp_title = 'Working Progress';
+        break;
+}// end switch()
+
+
+/*
+ * Aticles-------------------- 
+ */
+
+// Articles image source path
+$raraa_home_wp_articles_image_source_path = 'Img/Home/WorkingProgress/Articles/Article1/';
+// Articles image array
+$raraa_home_wp_articles_image_array = scandir( $raraa_home_wp_articles_image_source_path );
+// Articles image array size
+$raraa_home_wp_articles_image_array_size = sizeof( $raraa_home_wp_articles_image_array ); 
+
+// Articles authors source path
+$raraa_home_wp_articles_authors_source_path = 'Text/Common/Home/WorkingProgress/Articles/';
+
+$raraa_home_wp_articles_authors = scandir($raraa_home_wp_articles_authors_source_path);
+
+switch ( $langid ){
+    case 2:
+        $raraa_home_wp_articles_info_directory_path = "Text/PT/Home/WorkingProgress/Articles/";
+        break;
+    default:
+        $raraa_home_wp_articles_info_directory_path = "Text/ENG/Home/WorkingProgress/Articles/";
         break;
 }

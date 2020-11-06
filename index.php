@@ -15,7 +15,7 @@
       <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
       <!-- Custom styles for this template -->
-      <link href="css/raraa-frontpage.css" rel="stylesheet">
+      <link href="css/raraa-frontpage.css" rel="stylesheet">            
 
     </head>
 
@@ -42,7 +42,7 @@
         $langid = 1;
 
     }
-?>    
+    ?>    
     
     <?php
     
@@ -73,11 +73,8 @@
     
     include 'php_source/raraa_footer.php';
     ?>                   
-
         <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+        <script src="vendor/jquery/jquery.min.js"></script>        
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>             
     </body>
-
 </html>

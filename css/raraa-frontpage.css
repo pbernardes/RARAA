@@ -28,6 +28,7 @@
     padding-bottom: 61.5px;
     line-height: 27px;
   }
+  
 }
 
 .bg-light {
@@ -47,9 +48,19 @@ body {
 @media (min-width: 992px) {
   body {
     padding-top: 150px;
-  }
+  }  
 }
 
+@media screen and (min-width: 992px) {
+        .modal-lg {
+          max-width: 55%; /* New width for default modal */
+        }
+    }
+
+img {
+  width: 100%;
+  height: auto;
+}
 .raraa-header {
   height: 35vh;
   min-height: 300px;

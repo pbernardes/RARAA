@@ -8,7 +8,7 @@
 
 include 'raraa_headerAuxFuncPHP.php';
 ?>
-    <header class="raraa-header">
+    <!--header class="raraa-header"-->
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -49,5 +49,5 @@ include 'raraa_headerAuxFuncPHP.php';
                 <!-- /.row-->
             </div>  
             <!-- /.container -->
-        </header>
+        <!--/header-->
         <!-- /.header/raraa-header -->

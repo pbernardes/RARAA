@@ -15,7 +15,7 @@
                     <img class="d-block w-100" src="Img/Logo/RARAA_Logo_149.png" alt="Logo">
                 </a>
                 <a class="navbar-brand" style="font-size: 95%" href="?page=1&lg=<?php echo $langid;?>">
-                    <?php echo chooseHeaderTitle( $langid ); ?>
+                    <b><?php echo chooseHeaderTitle( $langid ); ?></b>
                 </a>
                 <!-- /. End brand/logo -->
                 <!-- ./ Responsive button -->

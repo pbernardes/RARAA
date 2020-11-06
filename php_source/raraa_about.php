@@ -4,6 +4,7 @@
  * Manage the "header"about" menu
  * 
  * @author: Paulo Bernardes
+ * @date: 3 nov 2020
  */
 
 /*
@@ -21,22 +22,30 @@ include 'raraa_aboutAuxFuncPHP.php';
 ?>
         <!-- Page Content -->
         <div class="container">
-
+            <!-- row -->
             <div class="row">
+                <!-- Col-sm-8 -->
                 <div class="col-sm-8">
+                    <!-- About title-->
                     <h2 class="mt-4"><?php echo $menu[1];?></h2>
+                    <!-- About Content -->
                     <div class="d-block mw-100">
                         <?php                        
                         openText($raraa_about_text_path);
                         ?>                  
-                    </div>
+                    </div>     
+                    <!-- /.d-bock -->
                 </div>
-                    <div class="col-sm-4">
-                      <h2 class="mt-4"><?php echo $menu[4];?></h2>
-                       <?php
-                      include 'raraa_news.php';
-                      ?>
+                <!-- /.col-sm-8 -->
+                <!-- News div-->
+                <div class="col-sm-4">
+                  <h2 class="mt-4"><?php echo $menu[4];?></h2>
+                  <?php
+                  include 'raraa_news.php';
+                  ?>
+                </div>
+                <!-- /.col-sm-4 -->
             </div>
-
+            <!-- /.row -->
         </div>
         <!-- /.container -->

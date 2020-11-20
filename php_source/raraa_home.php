@@ -55,12 +55,20 @@ include 'raraa_homeAuxFuncPHP.php';
                                     </div>
                                     <div class="modal-body">
                                         <?php
+                                        /*
+                                         * List of Articles/Guide Lines/Bibliography in the modal
+                                         */                                   
                                         for ( $j =0; $j < ( $raraa_home_wp_articles_image_array_size - 2 ); $j++){
                                         ?>
                                         <div class="card">
                                             <div class="row no-gutters">
-                                                <div class="col-auto">                                                    
-                                                    <img src="<?php echo $raraa_home_wp_articles_image_source_path.$raraa_home_wp_articles_image_array[ $j + 2 ]; ?>" class="img-fluid" alt="">
+                                                <div class="col-auto"> 
+                                                    <!--  CORRECÇÃO AQUI-->
+                                                    
+                                                    <img src="<?php echo $raraa_home_wp_articles_image_source_path.$raraa_home_wp_articles_image_array[ $j + 2 ].'/article'.($j+1).'.JPG'; ?>" class="img-fluid" alt="">
+                                                    
+                                                    <!--  CORRECÇÃO AQUI-->
+                                                    
                                                 </div>
                                                 <div class="col">
                                                     <div class="card-block px-2">

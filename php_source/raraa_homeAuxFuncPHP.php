@@ -48,7 +48,7 @@ $raraa_home_wp_image_title_array_size = sizeof( $raraa_home_wp_image_title_array
 
 switch ( $langid ){
     case 2:
-        $home_wp_title = 'Progresso do Trabalho';
+        $home_wp_title = 'Trabalho em Curso';
         break;
     default :
         $home_wp_title = 'Working Progress';
@@ -61,7 +61,7 @@ switch ( $langid ){
  */
 
 // Articles image source path
-$raraa_home_wp_articles_image_source_path = 'Img/Home/WorkingProgress/Articles/Article1/';
+$raraa_home_wp_articles_image_source_path = 'Img/Home/WorkingProgress/Articles/';
 // Articles image array
 $raraa_home_wp_articles_image_array = scandir( $raraa_home_wp_articles_image_source_path );
 // Articles image array size

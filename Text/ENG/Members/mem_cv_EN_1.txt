@@ -1,1 +1,9 @@
-Doing business like this takes much more effort than doing your own business at home, and on top of that there's the curse of travelling, worries about making train connections, bad and irregular food, contact with different people all the time so that you can never get to know anyone or become friendly with them.
+Responsible of the Archaeological and Architectural Information System, "2ArchIS", of the Unidade de Arqueologia; developed of the 3D representation of the urban evolution of Braga using CityEngine tool and a predictive model to support archaeological prospecting.<br>
+Responsible of information system developed to support the management of the expository information and multimedia applications in the project "Art Museum of the Côa Valley”.<br>
+Responsible of the Information System, development of WEB page  <a href="http://online.cmvminho.pt/patrimonio/">(http://online.cmvminho.pt/patrimonio/)</a> and CD-ROM "Archaeological and Architectural Heritage of Vieira do Minho", in the project "Inventory of Archaeological and Architectural Heritage of the county.<br> 
+PARTICIPATION IN INTERNATIONAL PROJECTS <br>
+Rock Art Open Access Repository Project (COA/OVD/0097/2019) as responsible researcher (2020-2023). <br>
+Member of the management committee (2019-2023) in COST ACTION CA18128 “Saving European Archaeology from the Digital Dark Age”.  <br>
+Member of the management committee – MC Substitute (2019-2023) in COST ACTION CA18110 “Underground Built Heritage as catalyser for Community Valorisation”. <br>
+Associated of ArchAIDE project, funded by the European Union’s Horizon 2020 research and innovation programme.<br>
+Associated  of the ARIADNE (2013-2017) and ARIADNEPlus (2019-2022) projects to provide a data infrastructure serving the archaeological community worldwide.

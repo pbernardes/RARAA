@@ -1,1 +1,9 @@
-Etiam posuere quam ac quam. Maecenas aliquet accumsan leo. Nullam dapibus fermentum ipsum. Etiam quis quam. Integer lacinia. Nulla est. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Integer vulputate sem a nibh rutrum consequat. Maecenas lorem. Pellentesque pretium lectus id turpis. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Fusce wisi. Phasellus faucibus molestie nisl. Fusce eget urna. Curabitur vitae diam non enim vestibulum interdum. Nulla quis diam. Ut tempus purus at lorem.
+Responsável pelo Sistema de Informação Arqueológica e Arquitectónica, “2ArchIS”, da Unidade de Arqueologia; desenvolvimento da representação 3D da evolução urbana de Braga utilizando a ferramenta CityEngine e um modelo preditivo de apoio à prospecção arqueológica.
+Responsável pelo sistema de informação desenvolvido para apoio à gestão da informação expositiva e aplicações multimédia no projecto “Museu de Arte do Vale do Côa”.
+Responsável pelo Sistema de Informação, desenvolvimento da página WEB (http://online.cmvminho.pt/patrimonio/) e CD-ROM “Património Arqueológico e Arquitectónico de Vieira do Minho”, no âmbito do projecto “Inventário do Património Arqueológico e Arquitectónico de o condado.
+PARTICIPAÇÃO EM PROJETOS INTERNACIONAIS
+Projeto de Repositório de Acesso Aberto Rock Art (COA / OVD / 0097/2019) como investigadora responsável (2020-2023).
+Membro do comité de gestão (2019-2023) na COST ACTION CA18128  “Saving European Archaeology from the Digital Dark Age”.
+Membro da comissão de gestão - MC Substituto (2019-2023) na COST ACTION CA18110 “Underground Built Heritage as catalyser for Community Valorisation”. 
+Associado ao projeto ArchAIDE, financiado pelo programa de pesquisa e inovação Horizon 2020 da União Europeia.
+Associado dos projetos ARIADNE (2013-2017) e ARIADNEPlus (2019-2022) para fornecer uma infraestrutura de dados ao serviço da comunidade arqueológica em todo o mundo.

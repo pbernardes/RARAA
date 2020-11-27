@@ -1,1 +1,2 @@
-Abstract em PT...
+DIRETRIZES PARTHENOS para a gestão de dados FAIR e torná-los reutilizáveis.<br><br>
+Guia para gestão de dados FAIR oferece uma série de diretrizes para alinhar os esforços de produtores e arquivos de dados em ciências humanas e sociais para tornar os dados de pesquisa tão reutilizáveis quanto possível.

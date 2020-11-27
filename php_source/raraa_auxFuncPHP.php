@@ -42,7 +42,7 @@ function chooseHeaderTitle( $lang_id ){
             $session_headertitle = 'Repositório de Arte Rupestre de Acesso Aberto';
             break;
         default:
-            $session_headertitle = 'Open Access Rock Art Repository';
+            $session_headertitle = 'Rock Art Repository Open Access';
             break;
     }
     

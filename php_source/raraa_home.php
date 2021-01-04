@@ -47,7 +47,7 @@ include 'raraa_homeAuxFuncPHP.php';
                         <?php 
                         for ( $i = 0; $i < ( $raraa_home_wp_image_array_size - 2 ); $i++ ){                                             
                         ?>
-                        <div class="modal fade" id="myModal<?php echo 0; // the '0' has to be changed by '$i' in the future?>" role="dialog">
+                        <div class="modal fade" id="myModal<?php echo $i; // the '0' has to be changed by '$i' in the future?>" role="dialog">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -60,33 +60,36 @@ include 'raraa_homeAuxFuncPHP.php';
                                          */                                   
                                         for ( $j =0; $j < ( $raraa_home_wp_articles_image_array_size - 2 ); $j++){
                                         ?>
-                                        <div class="card">
-                                            <div class="row no-gutters">
-                                                <div class="col-auto"> 
-                                                    <!--  CORRECÇÃO AQUI-->
-                                                    
-                                                    <img src="<?php echo $raraa_home_wp_articles_image_source_path.$raraa_home_wp_articles_image_array[ $j + 2 ].'/article'.($j+1).'.JPG'; ?>" class="img-fluid" alt="">
-                                                    
-                                                    <!--  CORRECÇÃO AQUI-->
-                                                    
-                                                </div>
-                                                <div class="col">
-                                                    <div class="card-block px-2">
-                                                        <h4 class="card-title">
-                                                            <?php openText($raraa_home_wp_articles_info_directory_path.$raraa_home_wp_articles_authors[$j + 2].'/title.txt'); ?>
-                                                        </h4>
-                                                        <h6>
-                                                            <?php openText($raraa_home_wp_articles_authors_source_path.$raraa_home_wp_articles_authors[$j + 2].'/name.txt'); ?>
-                                                        </h6>
-                                                        <p><b>Key-words:</b> <?php openText($raraa_home_wp_articles_info_directory_path.$raraa_home_wp_articles_authors[$j + 2].'/keywords.txt'); ?></p>
-                                                        <p class="card-text">
-                                                            <?php openText($raraa_home_wp_articles_info_directory_path.$raraa_home_wp_articles_authors[$j + 2].'/abstract.txt'); ?>
-                                                        </p>
-                                                        <a href="<?php openText($raraa_home_wp_articles_authors_source_path.$raraa_home_wp_articles_authors[$j + 2].'/doi.txt'); ?>" target="_blank" class="btn">DOI/Handle</a><a href="<?php openText($raraa_home_wp_articles_authors_source_path.$raraa_home_wp_articles_authors[$j + 2].'/cite.txt'); ?>" target="_blank" class="btn disabled">Cite</a>
+                                        <div class="row m-2">
+                                            <div class="card">
+                                                <div class="row no-gutters">
+                                                    <div class="col-auto"> 
+                                                        <!--  CORRECÇÃO AQUI-->
+
+                                                        <img src="<?php echo $raraa_home_wp_articles_image_source_path.$raraa_home_wp_articles_image_array[ $j + 2 ].'/article'.($j+1).'.JPG'; ?>" class="img-fluid" alt="">
+
+                                                        <!--  CORRECÇÃO AQUI-->
+
                                                     </div>
-                                                </div>
-                                            </div>                                                                                                                                     
+                                                    <div class="col">
+                                                        <div class="card-block px-2">
+                                                            <h4 class="card-title">
+                                                                <?php openText($raraa_home_wp_articles_info_directory_path.$raraa_home_wp_articles_authors[$j + 2].'/title.txt'); ?>
+                                                            </h4>
+                                                            <h6>
+                                                                <?php openText($raraa_home_wp_articles_authors_source_path.$raraa_home_wp_articles_authors[$j + 2].'/name.txt'); ?>
+                                                            </h6>
+                                                            <p><b>Key-words:</b> <?php openText($raraa_home_wp_articles_info_directory_path.$raraa_home_wp_articles_authors[$j + 2].'/keywords.txt'); ?></p>
+                                                            <p class="card-text">
+                                                                <?php openText($raraa_home_wp_articles_info_directory_path.$raraa_home_wp_articles_authors[$j + 2].'/abstract.txt'); ?>
+                                                            </p>
+                                                            <a href="<?php openText($raraa_home_wp_articles_authors_source_path.$raraa_home_wp_articles_authors[$j + 2].'/doi.txt'); ?>" target="_blank" class="btn">DOI/Handle</a><a href="<?php openText($raraa_home_wp_articles_authors_source_path.$raraa_home_wp_articles_authors[$j + 2].'/cite.txt'); ?>" target="_blank" class="btn disabled">Cite</a>
+                                                        </div>
+                                                    </div>
+                                                </div>                                                                                                                                     
+                                            </div>
                                         </div>
+                                        
                                         <?php
                                         }
                                         ?>

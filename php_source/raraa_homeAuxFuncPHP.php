@@ -57,7 +57,7 @@ switch ( $langid ){
 
 
 /*
- * Aticles-------------------- 
+ * Articles-------------------- 
  */
 
 // Articles image source path

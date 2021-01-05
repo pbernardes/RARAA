@@ -55,7 +55,6 @@ switch ( $langid ){
         break;
 }// end switch()
 
-
 /*
  * Articles-------------------- 
  */
@@ -80,3 +79,14 @@ switch ( $langid ){
         $raraa_home_wp_articles_info_directory_path = "Text/ENG/Home/WorkingProgress/Articles/";
         break;
 }
+    
+/*
+ * Good_Practice_Guide (GPG)-------------------- 
+ */    
+
+// GPG image source path
+$raraa_home_wp_gpg_image_source_path = 'Img/Home/WorkingProgress/GPGs/';
+// GPG image array
+$raraa_home_wp_gpg_image_array = scandir( $raraa_home_wp_gpg_image_source_path );
+// Articles image array size
+$raraa_home_wp_gpg_image_array_size = sizeof( $raraa_home_wp_gpg_image_array ); 

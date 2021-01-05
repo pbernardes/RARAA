@@ -30,7 +30,7 @@ include 'raraa_homeAuxFuncPHP.php';
                             for ( $i = 0; $i < ( $raraa_home_wp_image_array_size -2 ); $i++ ){                                             
                             ?>
                             <div class="carousel-item <?php if ( $i == 0 ) echo 'active'; ?>">
-                                <a role="button" href="#myModal1" data-toggle="modal" data-target="#myModal<?php echo $i;?>">
+                                <a role="button" href="#myModal<?php echo $i;?>" data-toggle="modal" data-target="#myModal<?php echo $i;?>">
                                     <img class="d-block w-100" src="<?php echo $raraa_home_wp_image_source_directory_path.$raraa_home_wp_image_array[ $i + 2 ];?>" alt="<?php openText( $raraa_home_wp_image_title_directory_path.$raraa_home_wp_image_title_array[ $i + 2 ]);?>">
                                 </a> 
                                 <div class="carousel-caption d-none d-md-block">
@@ -45,7 +45,8 @@ include 'raraa_homeAuxFuncPHP.php';
                         <!-- /.carousel-inner -->
                         
                         <?php 
-                        for ( $i = 0; $i < ( $raraa_home_wp_image_array_size - 2 ); $i++ ){                                             
+                        for ( $i = 0; $i < ( $raraa_home_wp_image_array_size - 2 ); $i++ ){    
+                            
                         ?>
                         <div class="modal fade" id="myModal<?php echo $i; // the '0' has to be changed by '$i' in the future?>" role="dialog">
                             <div class="modal-dialog modal-lg">
@@ -55,10 +56,25 @@ include 'raraa_homeAuxFuncPHP.php';
                                     </div>
                                     <div class="modal-body">
                                         <?php
+
                                         /*
-                                         * List of Articles/Guide Lines/Bibliography in the modal
+                                         * List of Articles/Guide Lines/Bibliography in the modal                                                                                
                                          */                                   
-                                        for ( $j =0; $j < ( $raraa_home_wp_articles_image_array_size - 2 ); $j++){
+                                        
+                                        switch ($i){
+                                            case 0:
+                                                $image_array_size = $raraa_home_wp_articles_image_array_size - 2;
+                                                break;
+                                            case 1:
+                                                $image_array_size = 0;
+                                                break;
+                                            case 2:
+                                                $image_array_size = 1;
+                                            default :
+                                                break;
+                                        }
+                                        
+                                        for ( $j = 0; $j < $image_array_size; $j++){
                                         ?>
                                         <div class="row m-2">
                                             <div class="card">

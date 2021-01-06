@@ -1,46 +1,10 @@
 <?php
 
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Auxiliary variables and/or functions for raraa_home.php
+ * 
+ * @author: Paulo Bernardes
  */
-
-/*
- * Retrieve Images----------------
- */
-
-// Working Progress image source path
-$raraa_home_wp_image_source_directory_path = "Img/Home/WorkingProgress/Slideshow/";
-
-// Working Progress image array
-$raraa_home_wp_image_array = scandir( $raraa_home_wp_image_source_directory_path );
-
-// Working Progress array size
-$raraa_home_wp_image_array_size = sizeof( $raraa_home_wp_image_array );
-
-/* 
- * Retrieve Image Titles----------------
-*/
-
-// Working Progress image title path
-//$wg_image_title_directory_path = "Text/ENG/Home/WorkingProgress/ImageTitle/";
-
-switch ( $langid ){
-    case 2:
-        $raraa_home_wp_image_title_directory_path = "Text/PT/Home/WorkingProgress/ImageTitle/";
-        break;
-    default:
-        $raraa_home_wp_image_title_directory_path = "Text/ENG/Home/WorkingProgress/ImageTitle/";
-        break;
-}
-
-// Working Progress image array
-$raraa_home_wp_image_title_array = scandir( $raraa_home_wp_image_title_directory_path );
-
-// Working Progress array size
-$raraa_home_wp_image_title_array_size = sizeof( $raraa_home_wp_image_title_array );
-
 
 /*
  *  Working Progress Title--------------------
@@ -56,7 +20,43 @@ switch ( $langid ){
 }// end switch()
 
 /*
- * Articles-------------------- 
+ * Retrieve Working Progress Images for carousel----------------
+ */
+
+// Working Progress image source path
+$raraa_home_wp_image_source_directory_path = "Img/Home/WorkingProgress/Slideshow/";
+
+// Working Progress image array
+$raraa_home_wp_image_array = scandir( $raraa_home_wp_image_source_directory_path );
+
+// Working Progress array size
+// This variable represents the number of themes on the "Working Progess" carousel.
+// Originally there are 3: "Articles", "Good practice guide" and "Bibliography".
+// However, other themes can be added seamlessly.
+$raraa_home_wp_image_array_size = sizeof( $raraa_home_wp_image_array );
+
+/* 
+ * Retrieve Working Progress Image Titles----------------
+*/
+
+// Working Progress image title path
+
+switch ( $langid ){
+    case 2:
+        $raraa_home_wp_image_title_directory_path = "Text/PT/Home/WorkingProgress/ImageTitle/";
+        break;
+    default:
+        $raraa_home_wp_image_title_directory_path = "Text/ENG/Home/WorkingProgress/ImageTitle/";
+        break;
+}// end switch()
+
+// Working Progress image title array
+$raraa_home_wp_image_title_array = scandir( $raraa_home_wp_image_title_directory_path );
+
+
+
+/*
+ * Articles -------------------- 
  */
 
 // Articles image source path
@@ -69,19 +69,10 @@ $raraa_home_wp_articles_image_array_size = sizeof( $raraa_home_wp_articles_image
 // Articles authors source path
 $raraa_home_wp_articles_authors_source_path = 'Text/Common/Home/WorkingProgress/Articles/';
 
-$raraa_home_wp_articles_authors = scandir($raraa_home_wp_articles_authors_source_path);
+$raraa_home_wp_articles_authors = scandir( $raraa_home_wp_articles_authors_source_path );
 
-switch ( $langid ){
-    case 2:
-        $raraa_home_wp_articles_info_directory_path = "Text/PT/Home/WorkingProgress/Articles/";
-        break;
-    default:
-        $raraa_home_wp_articles_info_directory_path = "Text/ENG/Home/WorkingProgress/Articles/";
-        break;
-}
-    
 /*
- * Good_Practice_Guide (GPG)-------------------- 
+ * Good_Practice_Guide (GPG) -------------------- 
  */    
 
 // GPG image source path
@@ -90,3 +81,42 @@ $raraa_home_wp_gpg_image_source_path = 'Img/Home/WorkingProgress/GPGs/';
 $raraa_home_wp_gpg_image_array = scandir( $raraa_home_wp_gpg_image_source_path );
 // Articles image array size
 $raraa_home_wp_gpg_image_array_size = sizeof( $raraa_home_wp_gpg_image_array ); 
+
+// GPG source path
+$raraa_home_wp_gpg_source_path = 'Text/Common/Home/WorkingProgress/GPGs/';
+
+$raraa_home_wp_gpg = scandir( $raraa_home_wp_gpg_source_path );
+
+
+/*
+ * Bibliography -------------------- 
+ */    
+
+// GPG image source path
+$raraa_home_wp_bibliography_image_source_path = 'Img/Home/WorkingProgress/Bibliography/';
+// GPG image array
+$raraa_home_wp_bibliography_image_array = scandir( $raraa_home_wp_bibliography_image_source_path );
+// Articles image array size
+$raraa_home_wp_bibliography_image_array_size = sizeof( $raraa_home_wp_bibliography_image_array ); 
+
+// Bibliography source path
+$raraa_home_wp_bibliography_source_path = 'Text/Common/Home/WorkingProgress/GPGs/';
+
+$raraa_home_bibliography_gpg = scandir( $raraa_home_wp_bibliography_source_path );
+
+
+/*
+ * Text path for language-depending text of the different themes
+ */
+switch ( $langid ){
+    case 2:
+        $raraa_home_wp_articles_info_directory_path = "Text/PT/Home/WorkingProgress/Articles/";
+        $raraa_home_wp_gpg_info_directory_path = "Text/PT/Home/WorkingProgress/GPGs/";
+        $raraa_home_wp_bibliography_info_directory_path = "Text/PT/Home/WorkingProgress/Bibliography/";
+        break;
+    default:
+        $raraa_home_wp_articles_info_directory_path = "Text/ENG/Home/WorkingProgress/Articles/";
+        $raraa_home_wp_gpg_info_directory_path = "Text/ENG/Home/WorkingProgress/GPGs/";
+        $raraa_home_wp_bibliography_info_directory_path = "Text/ENG/Home/WorkingProgress/Bibliography/";
+        break;
+}// end switch()

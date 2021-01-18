@@ -88,6 +88,15 @@ include 'raraa_homeAuxFuncPHP.php';
                                                     $card_DOI = $raraa_home_wp_articles_authors_source_path.$raraa_home_wp_articles_authors[$j + 2].'/doi.txt';
                                                     $card_cite = $raraa_home_wp_articles_authors_source_path.$raraa_home_wp_articles_authors[$j + 2].'/cite.txt';
                                                     break;
+                                                case 1 :
+                                                    $card_image = $raraa_home_wp_gpg_image_source_path.$raraa_home_wp_gpg_image_array[ $j + 2 ].'/GPG'.($j+1).'.JPG';
+                                                    $card_title = $raraa_home_wp_gpg_info_directory_path.$raraa_home_wp_gpg[$j + 2].'/title.txt';
+                                                    $card_authors = $raraa_home_wp_gpg_source_path.$raraa_home_wp_gpg[$j + 2].'/name.txt';
+                                                    $card_keywords = $raraa_home_wp_gpg_info_directory_path.$raraa_home_wp_gpg[$j + 2].'/keywords.txt';
+                                                    $card_text = $raraa_home_wp_gpg_info_directory_path.$raraa_home_wp_gpg[$j + 2].'/abstract.txt';
+                                                    $card_DOI = $raraa_home_wp_gpg_source_path.$raraa_home_wp_gpg[$j + 2].'/doi.txt';
+                                                    $card_cite = $raraa_home_wp_gpg_source_path.$raraa_home_wp_gpg[$j + 2].'/cite.txt';
+                                                    break;
                                                 default :
                                                     break;
                                             }

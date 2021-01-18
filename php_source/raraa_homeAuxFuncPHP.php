@@ -83,7 +83,7 @@ $raraa_home_wp_gpg_image_array = scandir( $raraa_home_wp_gpg_image_source_path )
 $raraa_home_wp_gpg_image_array_size = sizeof( $raraa_home_wp_gpg_image_array ); 
 
 // GPG source path
-$raraa_home_wp_gpg_source_path = 'Text/Common/Home/WorkingProgress/GPGs/';
+$raraa_home_wp_gpg_source_path = 'Text/Common/Home/WorkingProgress/GoodPracticeGuide/';
 
 $raraa_home_wp_gpg = scandir( $raraa_home_wp_gpg_source_path );
 
@@ -100,7 +100,7 @@ $raraa_home_wp_bibliography_image_array = scandir( $raraa_home_wp_bibliography_i
 $raraa_home_wp_bibliography_image_array_size = sizeof( $raraa_home_wp_bibliography_image_array ); 
 
 // Bibliography source path
-$raraa_home_wp_bibliography_source_path = 'Text/Common/Home/WorkingProgress/GPGs/';
+$raraa_home_wp_bibliography_source_path = 'Text/Common/Home/WorkingProgress/GoodPracticeGuide/';
 
 $raraa_home_bibliography_gpg = scandir( $raraa_home_wp_bibliography_source_path );
 
@@ -111,12 +111,12 @@ $raraa_home_bibliography_gpg = scandir( $raraa_home_wp_bibliography_source_path 
 switch ( $langid ){
     case 2:
         $raraa_home_wp_articles_info_directory_path = "Text/PT/Home/WorkingProgress/Articles/";
-        $raraa_home_wp_gpg_info_directory_path = "Text/PT/Home/WorkingProgress/GPGs/";
+        $raraa_home_wp_gpg_info_directory_path = "Text/PT/Home/WorkingProgress/GoodPracticeGuide/";
         $raraa_home_wp_bibliography_info_directory_path = "Text/PT/Home/WorkingProgress/Bibliography/";
         break;
     default:
         $raraa_home_wp_articles_info_directory_path = "Text/ENG/Home/WorkingProgress/Articles/";
-        $raraa_home_wp_gpg_info_directory_path = "Text/ENG/Home/WorkingProgress/GPGs/";
+        $raraa_home_wp_gpg_info_directory_path = "Text/ENG/Home/WorkingProgress/GoodPracticeGuide/";
         $raraa_home_wp_bibliography_info_directory_path = "Text/ENG/Home/WorkingProgress/Bibliography/";
         break;
 }// end switch()

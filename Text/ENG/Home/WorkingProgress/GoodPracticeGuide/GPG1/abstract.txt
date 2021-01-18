@@ -1,0 +1,2 @@
+PARTHENOS Guidelines to FAIRify data management and make data reusable<br><br>
+A comprehensive set of Guidelines to FAIRify data management and make data reusable is focusing on the topic of common policies.

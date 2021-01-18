@@ -1,7 +1,7 @@
 <?php
 
 /* 
- * Manage the "home" menu 
+ * Manage the "News" 
  * 
  * @author: Paulo Bernardes
  */

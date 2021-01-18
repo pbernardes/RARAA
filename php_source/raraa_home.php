@@ -160,7 +160,7 @@ include 'raraa_homeAuxFuncPHP.php';
                 <!-- /.col-sm-4 -->
                 <div class="col-sm-4">
                   <h2 class="mt-4"><?php echo $menu[4];?></h2>
-                  <?php include 'raraa_news.php';?>
+                  <?php include 'raraa_newsTopics.php';?>
                 </div>
                 <!-- /.col-sm-4 -->
             </div>

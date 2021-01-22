@@ -1,0 +1,12 @@
+Semantic Web Projects by Prof. Ana Alice Batista, developed with MIEGSI and MTI students.<br><br>
+Project 8 - Archeology - rock / plaque characterization<br>
+Eduarda Inês Alves Ribeiro da Cunha<br>
+Gabriel António Nogueira Teles<br>
+Júlio António Silva Oliveira Pereira Gonçalves<br>
+Francisco Eurico Pinto Cortez Martins Leite<br><br>
+
+Projet 9 - Archeology - motif characterization<br>
+José Miguel de Freitas Pinto<br>
+Nuna Daniela Ferreira Pinto<br>
+Pedro Miguel Rodrigues Pereira<br>
+João Barbosa<br>

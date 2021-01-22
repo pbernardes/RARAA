@@ -15,8 +15,8 @@ include 'raraa_newsAuxFuncPHP.php';
         </div>
         <h6>Session: # 503 of the 27th Annual Meeting of the European Association of Archaeologists</h6>
         <div class="single-post-content-wrapper">
-            <p>The RARAA: Open Access Rock Art Repository and the Rock Art Scotland project are collaborating in organizing session # 503 at the 27th Annual Meeting of the European Association of Archaeologists 2021 in Kiel.</p>
-            <p><a class="btn btn-secondary" href="?page=4&lg=<?php echo $langid;?>&news_id=1" role="button">+ info &raquo;</a></p>
+            <p><?php echo strstr( file_get_contents($raraa_news_text_directory_path.$raraa_news_text_array[0].'/body.txt'), '.', true); ?>.</p>
+            <p><a class="btn btn-secondary" href="?page=4&lg=<?php echo $langid;?>&news_id=1" role="button">+ info &raquo;</a> </p>
         </div>        
     </div>
 

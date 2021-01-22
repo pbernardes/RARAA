@@ -1,7 +1,7 @@
 <?php
 
 /* 
- * Manage the "header"about" menu
+ * Manage the "about" menu
  * 
  * @author: Paulo Bernardes
  * @date: 3 nov 2020

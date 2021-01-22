@@ -42,7 +42,17 @@
         $langid = 1;
 
     }
-    ?>    
+    
+    //set news ID
+    if ( isset ( $_GET['news_id'] )){
+        
+        $newsid = $_GET['news_id'];
+        
+    }else{
+        
+        $newsid = 1;
+    }
+    ?>                
     
     <?php
     

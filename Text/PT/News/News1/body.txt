@@ -1,0 +1,12 @@
+Projetos de Web Semântica da Prof. Ana Alice Batista, desenvolvidos com estudantes do curso MIEGSI e MTI.<br><br>
+Projeto 8 - Arqueologia - caracterização de rocha / placa<br>
+Eduarda Inês Alves Ribeiro da Cunha<br>
+Gabriel António Nogueira Teles<br>
+Júlio António Silva Oliveira Pereira Gonçalves<br>
+Francisco Eurico Pinto Cortez Martins Leite<br><br>
+
+Projeto 9 - Arqueologia - caracterização de motivo<br>
+José Miguel de Freitas Pinto<br>
+Nuna Daniela Ferreira Pinto<br>
+Pedro Miguel Rodrigues Pereira<br>
+João Barbosa

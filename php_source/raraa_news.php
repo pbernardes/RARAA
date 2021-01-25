@@ -5,6 +5,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+include 'raraa_newsAuxFuncPHP.php';
+
+if ($newsid <> -1){
 ?>
 <!-- Page Content -->
         <div class="container">
@@ -13,14 +17,12 @@
                 <!-- Col-sm-8 -->
                 <div class="col-sm-8">
                     <!-- About title-->
-                    <h2 class="mt-4">Session: # 503 of the 27th Annual Meeting of the European Association of Archaeologists</h2>
+                    <h2 class="mt-4"><?php echo file_get_contents($raraa_news_text_directory_path.'News'.$newsid.'/title.txt');?></h2>
                     <!-- About Content -->
                     <div class="d-block mw-100">
-                        <p><img src="Img/News/News1/News1.jpg" ></p>
-                        <p>The RARAA: Open Access Rock Art Repository and the Rock Art Scotland project are collaborating in organizing session # 503 at the 27th Annual Meeting of the European Association of Archaeologists 2021 in Kiel. The title of the session is "Towards an Inclusive Future: A Strategy for Rock Art Research, Management and Social Value", to discuss contemporary issues that affect rock art, such as accessibility to data and knowledge, climate change, rapid changes in land use and the role of digital technologies as methods of preservation and dissemination”. <a href="https://submissions.e-a-a.org/eaa2021/sessions/overview/preview.php?id=503" target="_blank">https://submissions.e-a-a.org/eaa2021/sessions/overview/preview.php?id=503</a><br><br>
-                            The form for submitting proposals for contributions to the session is available at <a href="https://submissions.e-a-a.org/eaa2021/" target="_blank">https://submissions.e-a-a.org/eaa2021/</a>.</p>
-                        <?php                        
-                        //openText($raraa_about_text_path);
+                        <p><img src="Img/News/News<?php echo $newsid?>.jpg" ></p>                        
+                        <?php                         
+                            echo file_get_contents($raraa_news_text_directory_path.'News'.$newsid.'/body.txt');
                         ?>                  
                     </div>     
                     <!-- /.d-bock -->
@@ -38,3 +40,37 @@
             <!-- /.row -->
         </div>
         <!-- /.container -->
+        <?php
+}
+else{
+        ?>
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- Col-sm-8 -->
+                <div class="col-sm-8">
+                    <!-- About title-->
+                    <h2 class="mt-4"><?php echo $menu[4];?></h2>
+                    <hr>
+                    <?php
+                        for ( $i=0; $i<$raraa_news_image_array_size; $i++){
+                    ?>
+                    <!-- About Content -->
+                    <div class="d-block mw-100">                        
+                        <p><a class="btn btn-secondary" href="?page=4&lg=<?php echo $langid;?>&news_id=<?php echo ($i+1);?>" role="button"><?php echo file_get_contents($raraa_news_text_directory_path.'News'.($i+1).'/title.txt');?></a></p>
+                    </div>     
+                    <!-- /.d-bock -->
+                    <hr>
+                    <?php
+                        }
+                    ?>
+                </div>
+                <!-- /.col-sm-12 -->
+                
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+        <?php
+}
+        ?>

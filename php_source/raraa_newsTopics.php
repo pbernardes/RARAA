@@ -57,7 +57,7 @@ include 'raraa_newsAuxFuncPHP.php';
     if ( $raraa_news_image_array_size > 1 ){
 ?>
         <div class="border border-warning mt-4 pl-2 pt-3">
-            <p><a href="?page=4&lg=<?php echo $langid;?>&news_id=-1" role="button">All News &raquo;</a></p>
+            <p><a href="?page=4&lg=<?php echo $langid;?>&news_id=-1" role="button"><?php echo $raraa_all_news;?></a></p>
         </div>
         <!-- /.border -->
     

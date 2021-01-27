@@ -29,9 +29,11 @@ $raraa_news_image_array_size = sizeof( $raraa_news_image_array ) - 2;
 switch ( $langid ){
     case 2:
         $raraa_news_text_directory_path = "Text/PT/News/";
+        $raraa_all_news = "Mais Novidades &raquo;";
         break;
     default:
         $raraa_news_text_directory_path = "Text/ENG/News/";
+        $raraa_all_news = "All News &raquo;";
         break;
 }// end switch()
 

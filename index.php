@@ -16,7 +16,7 @@
 
       <!-- Custom styles for this template -->
       <link href="css/raraa-frontpage.css" rel="stylesheet">            
-
+      
     </head>
 
     <body>

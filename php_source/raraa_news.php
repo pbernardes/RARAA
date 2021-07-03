@@ -58,6 +58,7 @@ else{
                     <!-- About Content -->
                     <div class="d-block mw-100">                        
                         <p><a class="btn btn-secondary" href="?page=4&lg=<?php echo $langid;?>&news_id=<?php echo ($i+1);?>" role="button"><?php echo file_get_contents($raraa_news_text_directory_path.'News'.($i+1).'/title.txt');?></a></p>
+                        <p style="font-size: 10px;  margin-top: -10px;">(<?php echo date("m Y", filemtime($raraa_news_text_directory_path.'News'.($i+1).'/title.txt'));?>)</p>
                     </div>     
                     <!-- /.d-bock -->
                     <hr>
